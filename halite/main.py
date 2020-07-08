@@ -5,7 +5,8 @@ from tournament.games import halite_game
 
 def main():
     # create 10 random players
-    players = [Player(i) for i in range(0, 7)]
+    num_players = 20
+    players = [Player(i) for i in range(num_players)]
 
     tourn = SwissTournament(7, players, 4, halite_game, 100)
 
